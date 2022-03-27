@@ -1,0 +1,3 @@
+Responsive Blocks
+
+Using the 'Plotting Your Blocks' task, convert it to responsive as shown below. Use 3 break points, 480px or smaller for phone screens, 481px or larger for tablet screens, and 1024px or larger for laptop/pc screens. Notice the blue box disappears in the medium and small screens.

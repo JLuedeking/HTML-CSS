@@ -1,0 +1,3 @@
+Clickable Prototype
+
+Create a web experience through using a clickable prototype based on the attached wireframes.
