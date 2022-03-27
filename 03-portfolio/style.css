@@ -1,0 +1,150 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 0 auto;
+    width: 970px;
+    align-items: center;
+    background-color: black;
+}
+
+header {
+    width: 970px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+}
+
+header p {
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-image: radial-gradient(circle, #a18192, #7d616e, #5a434c, #39272d, #1c0b10);
+    padding: 10px 15px;
+}
+
+.top-section {
+    display: flex;
+}
+
+.top-section img {
+    width: 400px;
+    margin: 10px;
+    border: 5px solid silver;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 14px 25px;
+}
+
+section {
+    margin: 10px 13px;
+    background-image: linear-gradient(to left, #dacbd9, #e1d8e4, #eae5ee, #f4f2f7, #ffffff);
+}
+
+section p, section a {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: black;
+}
+
+section h2, section h3 {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-image: linear-gradient(to top, #b2b2b6, #aaaaaf, #a2a1a9, #9a99a2, #92919c, #92919c, #92919c, #92919c, #9a99a2, #a2a1a9, #aaaaaf, #b2b2b6);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.middle-section {
+    display: flex;
+    margin: 3px 3px 0px 0px;
+}
+
+.middle-section img {
+    width: 287px;
+}
+
+.middle-section section {
+    margin: 10px 10px;
+    width: 287px;
+}
+
+.middle-section section p {
+    padding-top: 5px;
+    font-size: 14px;
+    height: 140px;
+}
+
+section h3 {
+    font-size: 16px;
+}
+
+.tech-icons {
+    flex-wrap: wrap;
+    padding: 10px 10px 5px;
+    width: 300px;
+}
+
+.tech-icons img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+footer {
+    background-color: #F8F8F8;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 40px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: block;
+    margin-top: 15px;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    height: 100%;
+    font-style: italic;
+}
+
+li img {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.middle-section section a {
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: #407C60;
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.32); 
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.32);
+    font-weight: bold;
+}
+
+.site-link {
+    text-align: center;
+}
