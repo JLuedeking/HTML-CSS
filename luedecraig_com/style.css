@@ -1,0 +1,245 @@
+* {
+    outline: 1px dotted red;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    color: white;
+    background-color: #DCDCEB;
+    letter-spacing: 0.015em;
+}
+
+header {
+    background-color: #0006D2;
+    background-image: url("./img/background.jpg");
+    background-position: bottom center;
+    height: 685px;
+    padding-top: 15px;
+}
+
+header img {
+    width: 300px;
+}
+
+.topper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+}
+
+.topper img {
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.topper ul {
+    width: 100%;
+    max-width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shape {
+    margin-top: -85px;
+}
+
+.topper li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.72;
+    letter-spacing: 0.015em;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 14px;
+}
+
+.topper a {
+    text-decoration: none;
+    color: white;
+}
+
+.rsvp-box {
+    max-width: 1100px;
+    max-height: 400px;
+    height: 346px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+h1, .rsvp-box p, .rsvp-box a {
+    margin-right: 0;
+    margin-left: auto;
+    width: 500px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 0.95;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.4;
+    color:#0006D2;
+    text-align: center;
+    margin-top: -10px;
+}
+
+h3 {
+    color:#0006D2;
+}
+
+.rsvp-box p {
+    text-align: right;
+    padding-right: 205px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: #b7c1e8;
+    width: 250px;
+    margin-top: 8px;
+}
+
+.rsvp-box a {
+    display: block;
+    width: 100px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    margin-right: 170px;
+    text-align: center;
+    background-color: #0006D2;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.rsvp-box a img {
+    width: 20px;
+    height: 20px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-top: 50px;
+}
+
+main p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: black;
+    text-align: center;
+}
+
+.spacer-text {
+    margin-top: 70px;
+}
+
+.wedding-party {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 20px 20px 0px 20px;
+    border-radius: 15px;
+    padding: 15px;
+    -webkit-box-shadow: 0px 22px 38px 0px rgba(51,51,51,0.44); 
+    box-shadow: 0px 22px 38px 0px rgba(51,51,51,0.44);
+}
+
+.wedding-party section img {
+    width: 296px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.wedding-party section p {
+    text-align: left;
+    font-weight: unset;
+}
+
+.map {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #1f2ab9;
+    height: 50px;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+footer ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+footer li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.72;
+    letter-spacing: 0.015em;
+    text-shadow: 1px 1px 1px #000;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    width: 150px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    display: block;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.wedding-party2 {
+    flex: none;
+    max-width: 1100px;
+    margin-top: 40px;
+}
+
+.officiant  {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bride-groom-h3 {
+    text-align: center;
+}
+
+.wedding-party section img .bride-groom-img {
+    height: 500px;
+}
