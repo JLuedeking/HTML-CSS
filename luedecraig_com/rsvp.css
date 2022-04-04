@@ -2,6 +2,7 @@
     /* outline: 1px dotted red; */
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body, html {
@@ -89,7 +90,7 @@ h1, .rsvp-box p, .rsvp-box a {
 
 .rsvp-box a {
     display: block;
-    width: 100px;
+    width: 160px;
     padding: 12px 30px;
     margin-top: 20px;
     margin-right: 170px;
@@ -109,26 +110,35 @@ h1, .rsvp-box p, .rsvp-box a {
     height: 20px;
 }
 
-
-h1, h2, h3 {
+h1, h2, h3, .form-heading {
     font-family: 'Playfair Display', serif;
 }
 
 h1 {
-    font-size: 75px;
+      font-size: 75px;
+      line-height: 0.95;
+      font-weight: 400;
+      text-align: right;
+      margin-top: 30px;
+}
+
+.form-heading {
+    font-size: 95px;
     line-height: 0.95;
     font-weight: 400;
-    text-align: right;
-    margin-top: 30px;
+    text-align: center;
+    padding: 80px 10px 20px;
+    min-width: 100%;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 1.4;
     color:#0006D2;
     text-align: center;
-    margin-top: -10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 h3 {
@@ -138,7 +148,7 @@ h3 {
 main {
     margin: 0 auto;
     max-width: 1100px;
-    padding-top: 50px;
+    margin-top: -80px;
 }
 
 main p {
@@ -151,74 +161,72 @@ main p {
     text-align: center;
 }
 
-
 .wedding-party {
     margin-bottom: 20px;
-}
-
-.spacer-text {
-    margin-top: 70px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
 }
 
 section {
-    display: inline-block;
+    min-width: 100%;
     background-color: white;
-    margin: 20px;
     border-radius: 15px;
-    padding: 15px;
     -webkit-box-shadow: 0px 22px 38px 0px rgba(51,51,51,0.44); 
     box-shadow: 0px 22px 38px 0px rgba(51,51,51,0.44);
 }
 
-.hidden-spacer {
-    background-color: unset;
-    margin: 20px;
-    padding: 15px;
-    -webkit-box-shadow: unset;
-    box-shadow: unset;
+.locations {
+      grid-row: 1 / 3;
+      padding: 20px ;
 }
 
-.bride-groom-h3 {
-    text-align: center;
+.bluebg {
+      padding: 0px;
+      background-color: #0006D2;
+      border-radius: 15px 15px 0px 0px;
+      padding-bottom: 50px;
 }
 
-.our-story {
-    display: block;
-    width: 220px;
-    margin: 45px auto -20px;
-    font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    padding: 15px 30px;
-    background-color: #1f2ab9;
-    border-radius: 30px;
-    color: white;
+.bluebg p {
+      color: white;
+      text-align: center;
+      display: block;
 }
 
-main .wedding-party a .our-story {
-    color: white;
+form {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: 1fr 1fr;
+      background-color: white;
+      color: black;
+      max-height: 100%;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 400;
+      padding: 50px;
 }
 
-.wedding-party section img {
-    width: 296px;
-    border-radius: 0px;
-    outline: 1px solid rgb(107, 107, 107);
+input, textarea {
+      border: 1px solid silver;
+      border-radius: 30px;
+      padding: 8px 15px;
+      margin-bottom: 20px;
+      min-width: 100%;
 }
 
-.wedding-party section p {
-    text-align: left;
-    font-weight: unset;
+label p {
+    text-align: unset;
+    margin-bottom: 5px;
 }
 
-.officiant  {
-    width: 300px;
-    display: block;
-    margin: 0 auto;
+.big-box {
+      grid-column: 1 / 3;
 }
 
 footer {
     background-color: #1f2ab9;
-    height: 50px;
+    min-height: 100%;
     margin-top: 50px;
     padding-top: 20px;
 }
@@ -264,10 +272,6 @@ footer p {
         display: none;
     }
 
-    .sm-3 {
-        width: 82%;
-    }
-
     header .topper .hamburger {
         display: inline-block;
         margin-top: -25px;
@@ -275,8 +279,8 @@ footer p {
         height: 60px;
     }
 
-    .wedding-party section img {
-        width: 100%;
+    .wedding-party {
+        grid-template-columns: 1fr;
     }
 
     h1, .rsvp-box p {
@@ -292,6 +296,8 @@ footer p {
 
     h2 {
         line-height: 1;
+        font-size: 45px;
+        margin-bottom: 15px;
     }
 
     header {
@@ -336,17 +342,12 @@ footer p {
         width: 250px;
     }
 
-    .our-story {
-        margin: 50px auto -20px;
-        padding: 15px 30px;
+    main {
+        padding: 15px;
     }
 
     .spacer-text, .mobile-spacer-text {
         margin-bottom: 15px;
-    }
-
-    section {
-        margin: 20px 20px 0px;
     }
 
     h2 {
@@ -377,29 +378,22 @@ footer p {
 
 /* Tablets */
 @media (min-width: 481px) and (max-width: 1023.9px) {
+    main {
+        padding: 15px;
+    }
+    
     .md-0 {
         display: none;
     }
-
-    .md-1 {
-        width: 44.3%;
+    
+    .wedding-party {
+        grid-template-columns: 1fr 1fr;
     }
-
-    .md-2 {
-        width: 97%;
-    }
-
-    section {
-        margin: 10px;
-    }
-
-    .wedding-party section img {
-        width: 100%;
-    }
-
+    
     header {
         background-position: bottom left;
         padding: 0px 100px;
+        margin-bottom: 10px;
     }
 
     header .topper img {
@@ -444,7 +438,7 @@ footer p {
     }
 
     .rsvp-box a {
-        width: 130px;
+        width: 240px;
         padding: 17px 50px 17px;
         margin: 200px auto 0px;
         font-size: 32px;
@@ -478,14 +472,6 @@ footer p {
 @media (min-width: 1024px) {
     .lg-0 {
         display: none;
-    }
-
-    .lg-1 {
-        width: 26.7%;
-    }
-
-    .lg-3 {
-        width: 100%;
     }
 
     .hamburger {
