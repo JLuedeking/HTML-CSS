@@ -159,6 +159,10 @@ main p {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.heading-section {
+    grid-column: 1 / 4;
+}
+
 .spacer-text {
     margin-top: 70px;
 }
