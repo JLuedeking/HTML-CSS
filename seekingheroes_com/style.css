@@ -1,0 +1,70 @@
+* {
+   margin: 0;
+   padding: 0;
+   /* outline: 1px dashed red; */
+}
+
+@font-face {
+   font-family: Norse;
+   src: url("./fonts/Norse-KaWl.otf") format("opentype");
+}
+
+@font-face {
+   font-family: Norse;
+   font-weight: bold;
+   src: url("./fonts/NorseBold-2Kge.otf") format("opentype");
+}
+
+body {
+   background-color: #000;
+   padding: 30px 0px;
+}
+
+.wrapper {
+   width: 1450px;
+   margin: 0 auto;
+}
+
+nav ul {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1;
+}
+
+nav ul li {
+   color: #FFF;
+   list-style: none;
+   font-family: Norse, "MS Serif", "New York", sans-serif;
+   font-size: 30px;
+   text-align: center;
+   text-transform: uppercase;
+   margin: auto 0;
+}
+
+nax ul li img {
+   width: 200px;
+}
+
+footer {
+   position:fixed;
+   padding-top: 20px;
+   bottom:0;
+   left:0;
+   right:0;
+   height:50px;
+   text-align: center;
+   color: #FFF;
+   border-top: #282424 solid 10px;
+}
+
+footer p {
+   padding-bottom: 5px;
+   font-family: "PT Sans";
+}
+
+footer p a {
+   color: #ff9800;
+}
+footer p a:hover {
+   color: #ce7b00;
+}
