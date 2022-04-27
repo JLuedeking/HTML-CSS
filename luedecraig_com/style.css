@@ -13,9 +13,10 @@ body, html {
 }
 
 header {
-    background-color: #0006D2;
     background-image: url("./img/background.jpg");
     background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size:cover;
     height: 685px;
     padding-top: 15px;
 }
