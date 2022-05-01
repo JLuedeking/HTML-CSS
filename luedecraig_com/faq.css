@@ -116,10 +116,10 @@ h1, h2, h3, .form-heading {
 }
 
 h1 {
-      font-size: 75px;
-      line-height: 0.95;
+      font-size: 70px;
+      line-height: 1.1;
       font-weight: 400;
-      text-align: right;
+      text-align: center;
       margin-top: 30px;
 }
 
@@ -137,7 +137,6 @@ h2 {
     font-weight: 400;
     line-height: 1.4;
     color:#0006D2;
-    text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -149,7 +148,7 @@ h3 {
 main {
     margin: 0 auto;
     max-width: 1100px;
-    margin-top: -60px;
+    margin-top: 20px;
 }
 
 main p {
@@ -159,23 +158,17 @@ main p {
     line-height: 1.5;
     letter-spacing: 0px;
     color: black;
-    text-align: center;
 }
 
 .wedding-party {
     margin-bottom: 20px;
     display: grid;
     grid-gap: 25px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-}
-
-section {
-    min-width: 100%;
     background-color: white;
     border-radius: 15px;
-    -webkit-box-shadow: 0px 22px 38px 0px rgba(51,51,51,0.44); 
-    box-shadow: 0px 22px 38px 0px rgba(51,51,51,0.44);
+    min-width: 100%;
 }
 
 .locations {
@@ -218,6 +211,10 @@ form {
       padding: 8px 15px;
       margin-bottom: 20px;
       min-width: 100%;
+}
+
+.red {
+    color: red;
 }
 
 input[type=submit] {
@@ -411,10 +408,6 @@ footer p {
     
     .md-0 {
         display: none;
-    }
-    
-    .wedding-party {
-        grid-template-columns: 1fr 1fr;
     }
     
     header {
