@@ -306,8 +306,13 @@ footer p {
         height: 60px;
     }
 
-    .wedding-party {
+    form, .wedding-party {
         grid-template-columns: 1fr;
+        padding: 20px 0px;
+    }
+
+    label {
+        padding: 0px 20px;
     }
 
     h1, .rsvp-box p {
@@ -379,6 +384,14 @@ footer p {
 
     h2 {
         padding: 0px 20px;
+    }
+
+    .big-box, input[type=submit] {
+        grid-column: 1 / 2;
+    }
+
+    input[type=submit] {
+        grid-row: 6 / 7;
     }
 
     footer {
@@ -474,6 +487,18 @@ footer p {
     .rsvp-box a img {
         width: 25px;
         height: 25px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .big-box, input[type=submit] {
+        grid-column: 1 / 2;
+    }
+
+    input[type=submit] {
+        grid-row: 6 / 7;
     }
 }
 

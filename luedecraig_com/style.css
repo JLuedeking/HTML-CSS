@@ -336,13 +336,15 @@ footer p {
     }
 
     .rsvp-box a {
-        display: none;
+        margin: 0 auto;
     }
 
     .rsvp-box p {
         padding-right: 0px;
         font-size: 18px;
         width: 250px;
+        padding-bottom: 30px;
+        padding-top: 20px;
     }
 
     main {
