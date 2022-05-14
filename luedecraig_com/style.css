@@ -115,6 +115,15 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 
+.timer {
+    background-color: #1f2ab9;
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 35px;
+}
+
 h1 {
     font-size: 75px;
     line-height: 0.95;
@@ -359,6 +368,16 @@ footer p {
 
     .spacer-text, .mobile-spacer-text {
         margin-bottom: 15px;
+        display: block;
+    }
+
+    .timer {
+        font-size: 42px;
+        padding-top: 12px;
+    }
+
+    .countdown-text {
+        font-size: 28px;
     }
 
     h2 {
@@ -404,7 +423,6 @@ footer p {
     header {
         background-position: bottom left;
         padding: 0px 100px;
-        margin-bottom: 10px;
     }
 
     header .topper img {
