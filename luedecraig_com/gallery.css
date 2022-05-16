@@ -197,19 +197,6 @@ main .wedding-party a {
     text-align: center;
 }
 
-.our-story {
-    display: block;
-    width: 280px;
-    margin: 45px auto -20px;
-    font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    padding: 15px 30px;
-    background-color: #1f2ab9;
-    border-radius: 30px;
-    color: white;
-}
-
 main .wedding-party a .our-story {
     color: white;
 }
@@ -273,6 +260,27 @@ footer p {
     vertical-align: top;
 }
 
+.stories {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.story {
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.story p {
+    text-align: unset;
+    padding: 8px 0px;
+}
+
+.our-story {
+    grid-column: 1 / 3;
+}
+
 /* Mobile Phones */
 @media (max-width: 480px) {
     .sm-0 {
@@ -309,6 +317,7 @@ footer p {
         line-height: 1;
         font-size: 45px;
         margin-bottom: 15px;
+        margin-top: 10px;
     }
 
     header {
@@ -357,10 +366,16 @@ footer p {
         padding: 15px;
     }
 
+    .stories {
+        grid-template-columns: 1fr;
+    }
+
+    .story {
+        margin-bottom: 10px;
+    }
+    
     .our-story {
-        margin: 50px auto -20px;
-        width: 300px;
-        padding: 15px 30px;
+        grid-column: 1 / 2;
     }
 
     .spacer-text, .mobile-spacer-text {
@@ -442,6 +457,10 @@ footer p {
     h1 {
         font-size: 47px;
         text-align: center;
+    }
+
+    h2 {
+        font-size: 45px;
     }
 
     .rsvp-box p {
